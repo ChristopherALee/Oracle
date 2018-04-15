@@ -7,7 +7,8 @@ Oracle is an application focused on visualizing vehicular traffic by land, sea, 
 ## Development List
 
 * Google Maps API Integration
-* Various transportation APIs
+* Canvas Integration for animated visualization
+* Various transportation APIs for real-time data
   * NYC MTA
   * Aerospace Traffic
   * Oceanic Traffic
