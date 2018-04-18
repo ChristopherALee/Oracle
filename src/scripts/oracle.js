@@ -1,7 +1,7 @@
 class Oracle {
   constructor() {
     this.map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 40.674, lng: -73.945 },
+      center: { lat: 40.736648, lng: -73.897235 },
       zoom: 12,
       styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -87,7 +87,9 @@ class Oracle {
     this.mode = "MTA";
   }
 
-  setCenter() {}
+  setCenter(lat, lng) {
+    this.map.setCenter(new google.maps.LatLng(lat, lng));
+  }
 }
 
 export default Oracle;
