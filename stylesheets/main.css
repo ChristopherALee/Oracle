@@ -4,5 +4,5 @@ body {
 }
 
 #map {
-  height: 90%;
+  height: calc(100% - 15px);
 }
