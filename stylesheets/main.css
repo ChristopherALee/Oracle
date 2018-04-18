@@ -39,6 +39,19 @@ h1 {
   font-family: "Orbitron", sans-serif;
 }
 
+#traffic-selectors {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.traffic-buttons {
+  width: 80%;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-around;
+}
+
 #map {
   height: calc(100%);
   width: calc(100% - 500px);
