@@ -1,8 +1,32 @@
 html,
-body {
+body,
+main {
   height: 100%;
 }
 
+#oracle-app {
+  display: flex;
+}
+
+#sidebar {
+  background-color: #1e2b3f;
+  width: 500px;
+}
+
+.header {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Orbitron", sans-serif;
+}
+
 #map {
-  height: calc(100% - 15px);
+  height: calc(100%);
+  width: calc(100% - 500px);
 }

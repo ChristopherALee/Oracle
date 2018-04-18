@@ -7,16 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Oracle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/reset.css">
   <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
-  <h1>Oracle</h1>
-  <div id="map"></div>
-  <script src="./src/bundle.js" charset="utf-8"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRluIZwVmxuYkwfbZNocqK4BTAX7YG4YE&callback=initMap"
-    type="text/javascript"></script>
+  <main id="oracle-app">
+    <section id="sidebar">
+      <div class="header">
+        <h1>Oracle</h1>
+      </div>
+    </section>
+
+    <div id="map"></div>
+    <script src="./src/bundle.js" charset="utf-8"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRluIZwVmxuYkwfbZNocqK4BTAX7YG4YE&callback=initMap"
+      type="text/javascript"></script>
+  </main>
 </body>
 
 </html>
