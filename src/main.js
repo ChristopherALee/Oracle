@@ -7,6 +7,6 @@ window.initMap = () => {
 
   const set = document.getElementsByClassName("set-center")[0];
   set.addEventListener("click", () => {
-    initialize.setCenter(40.736648, -73.897235);
+    initialize.map.setCenter(40.736648, -73.897235);
   });
 };
