@@ -13,11 +13,24 @@ main {
   width: 500px;
 }
 
-.header {
+.header-content {
   margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Raleway", sans-serif;
 }
 
 h1 {
