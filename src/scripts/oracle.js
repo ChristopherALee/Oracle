@@ -3,7 +3,7 @@ import Map from "./map.js";
 class Oracle {
   constructor() {
     this.map = new Map();
-    this.mode = "none";
+    this.mode = null;
     this.trainButton = document.getElementsByClassName("train")[0];
     this.airplaneButton = document.getElementsByClassName("airplane")[0];
     this.boatButton = document.getElementsByClassName("boat")[0];
