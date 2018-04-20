@@ -46,10 +46,36 @@ h1 {
 }
 
 .traffic-buttons {
-  width: 80%;
+  height: 30px;
+  width: 90%;
   color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
   display: flex;
   justify-content: space-around;
+}
+
+.traffic-buttons > .train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.traffic-buttons > .airplane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.traffic-buttons > .boat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
 }
 
 #map {
