@@ -6,17 +6,14 @@ window.initMap = () => {
   var map = initialize.map;
 
   // Initializing buttons
-  const set = document.getElementsByClassName("set-center")[0];
-  set.addEventListener("click", () => {
-    initialize.map.setCenter(40.736648, -73.897235);
-  });
-
   const trainButton = document.getElementsByClassName("train")[0];
   const airplaneButton = document.getElementsByClassName("airplane")[0];
   const boatButton = document.getElementsByClassName("boat")[0];
 
   trainButton.addEventListener("click", () => {
     initialize.changeMode("train");
+    initialize.map.setCenter(40.706648, -73.887235);
+    initialize.map.setZoom(12);
 
     airplaneButton.classList.remove("airplane-active");
     airplaneButton.classList.add("airplane");
@@ -30,6 +27,8 @@ window.initMap = () => {
 
   airplaneButton.addEventListener("click", () => {
     initialize.changeMode("airplane");
+    initialize.map.setCenter(34.403065, -92.181998);
+    initialize.map.setZoom(4);
 
     trainButton.classList.remove("train-active");
     trainButton.classList.add("train");
@@ -43,6 +42,8 @@ window.initMap = () => {
 
   boatButton.addEventListener("click", () => {
     initialize.changeMode("boat");
+    initialize.map.setCenter(34.403065, -92.181998);
+    initialize.map.setZoom(4);
 
     trainButton.classList.remove("train-active");
     trainButton.classList.add("train");

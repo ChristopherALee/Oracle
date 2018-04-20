@@ -3,7 +3,7 @@ import Map from "./map.js";
 class Oracle {
   constructor() {
     this.map = new Map();
-    this.mode = "train";
+    this.mode = "none";
   }
 
   changeMode(mode) {

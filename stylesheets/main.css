@@ -49,8 +49,6 @@ h1 {
   height: 30px;
   width: 90%;
   color: rgba(255, 255, 255, 1);
-  /* border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 6px; */
   display: flex;
   justify-content: space-around;
 }
@@ -70,6 +68,7 @@ h1 {
 
 .traffic-buttons > .train:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .traffic-buttons > .train-active {
@@ -97,6 +96,7 @@ h1 {
 
 .traffic-buttons > .airplane:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .traffic-buttons > .airplane-active {
@@ -124,6 +124,7 @@ h1 {
 
 .traffic-buttons > .boat:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .traffic-buttons > .boat-active {

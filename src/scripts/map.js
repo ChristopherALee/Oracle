@@ -1,8 +1,8 @@
 class Map {
   constructor() {
     this.map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 40.736648, lng: -73.897235 },
-      zoom: 12,
+      center: { lat: 34.403065, lng: -92.181998 },
+      zoom: 4,
       styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -88,6 +88,10 @@ class Map {
 
   setCenter(lat, lng) {
     this.map.setCenter(new google.maps.LatLng(lat, lng));
+  }
+
+  setZoom(zoomLvl) {
+    this.map.setZoom(zoomLvl);
   }
 }
 
