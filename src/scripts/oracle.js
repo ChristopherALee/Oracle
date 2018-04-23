@@ -1,8 +1,10 @@
 import Map from "./map.js";
+import Overlay from "./overlay.js";
 
 class Oracle {
   constructor() {
     this.map = new Map();
+    this.overlay = new Overlay(this.map.map);
     this.mode = null;
     this.trainButton = document.getElementsByClassName("train")[0];
     this.airplaneButton = document.getElementsByClassName("airplane")[0];
@@ -10,6 +12,8 @@ class Oracle {
   }
 
   initialize() {
+    this.overlay.addCanvas();
+
     this.trainButton.addEventListener("click", () => {
       this.changeMode("train");
       this.map.setCenter(40.706648, -73.887235);
