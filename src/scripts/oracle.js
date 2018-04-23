@@ -12,7 +12,7 @@ class Oracle {
   }
 
   initialize() {
-    this.overlay.addCanvas();
+    // this.overlay.addCanvas();
 
     this.trainButton.addEventListener("click", () => {
       this.changeMode("train");
